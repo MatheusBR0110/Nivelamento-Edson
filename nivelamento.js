@@ -26,7 +26,50 @@ console.log(bool);
 
 //7. Verifique se um número é maior que outro e exiba o resultado.
 if(50 - 29){
-    console.log("É maior")
+    console.log("É maior");
 }
 
-//8. 
+//8. Crie duas variáveis com algum valor e exiba a concatenação
+par = 2;
+impar = 1;
+
+console.log('par + impar');
+
+//9. Descubra o tipo de uma variável
+console.log(typeof(par)); //typeof mostra o tipo da variável
+
+//10. Converta um número para string
+let numero = 10;
+console.log(String(numero));
+
+//11. Converta uma string para número
+let texto = "123";
+console.log(Number(texto));
+
+//12. Exiba no console.log números de 0 a 10
+for(i =0; i<=10; i++){
+    console.log(i);
+}
+
+//13. Exiba apenas números pares até 20.
+for(let i =0; i<=20; i+=2){
+    console.log(i);
+}
+
+//14. Mostre no console número de 10 até 1
+for(let i=10; i>=0; i--){
+    console.log(i);
+}
+
+//15. Some números de 1 a 5.
+let somaLoop =0;
+for(let i=1; i<=5; i++){
+    somaLoop+=i;
+    console.log("valor de i" +i+ "valor de somaLoop" + somaLoop);
+}
+console.log(somaLoop);
+
+//16. Faça a tabuada do 3.
+for(i =0; i<=10; i++){
+    console.log(i * 3);
+}
