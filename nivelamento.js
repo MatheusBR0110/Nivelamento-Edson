@@ -73,3 +73,23 @@ console.log(somaLoop);
 for(i =0; i<=10; i++){
     console.log(i * 3);
 }
+
+//17. Conte quantos números são maiores que 5.
+let lista = [2,6,8,1,3];
+let cont = 0;
+for(let i=0; i<lista.length;i++){
+    if(lista[i]>5)cont++;
+}
+console.log(cont);
+
+//18. Percorra a string letra por letra.
+let palavra = "JFRS";
+for(let i=0; i<palavra.length;i++){
+    console.log(palavra[i]);
+}
+
+//19. Pare um loop quando encontrar o número 7 de 0 a 10.
+for(i = 0; i <= 10; i++){
+    if(i===7)break
+    console.log(i);
+}
