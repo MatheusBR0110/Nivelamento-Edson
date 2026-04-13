@@ -93,3 +93,42 @@ for(i = 0; i <= 10; i++){
     if(i===7)break
     console.log(i);
 }
+
+//20. Crie uma função que exiba uma mensagem qualquer
+function mensagem(){
+    console.log("mensagem por function");
+}
+mensagem();
+
+//21. Função que multiplica doi números.
+function multiplica(){
+    console.log(7 * 5);
+}
+multiplica();
+
+//22. Crie uma função que verifica se é par ou impar.
+function Verifique(x){
+    if(x%2==0){
+        return 'par'
+    }
+    else{
+        return 'impar'
+    };
+}
+console.log(Verifique(38))
+
+//23. Crie uma função que retorne o dobro.
+function dobrar(n){
+    return n * 2;
+}
+console.log(dobrar(4));
+
+//24. Crie uma função que some elementos de um array.
+function somaArray(arr){
+    total = 0;
+    for(let i=0; i<arr.length; i++){
+        total +=arr[i];
+    }
+    return total;
+}
+console.log(somaArray([38, 52, 79]));
