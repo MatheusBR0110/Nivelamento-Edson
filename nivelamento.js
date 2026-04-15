@@ -132,3 +132,26 @@ function somaArray(arr){
     return total;
 }
 console.log(somaArray([38, 52, 79]));
+
+//25. Verifique se o número 15 é positivo e exiba uma mensagem.
+let num = 15;
+if(numero > 0){
+    console.log(`${num} é positivo`);
+}
+
+//26. verifique se uma pessoa com 17 anos é maior de idade.
+console.log("\n=== Maior ou menor de idade===");
+let idade = 17;
+if(idade>=18){
+    console.log("maior de idade")
+}else{
+    console.log("menor de idade")
+}
+
+//27. Crie um array com os números 10, 20, 30, 40 e exiba todos.
+let array_numeros = [10, 20, 30, 40]
+console.log(array_numeros)
+
+//28. Crie um array com 5 nomes e exiba a primeira posição.
+let nomes = ['Matheus', 'Joaquim', 'Eduardo', 'Gustavo', 'maicon']
+console.log(nomes[0])
