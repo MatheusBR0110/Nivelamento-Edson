@@ -155,3 +155,25 @@ console.log(array_numeros)
 //28. Crie um array com 5 nomes e exiba a primeira posição.
 let nomes = ['Matheus', 'Joaquim', 'Eduardo', 'Gustavo', 'maicon']
 console.log(nomes[0])
+
+//29. Adicion o número 50 no final do array[10, 20, 30, 40].
+let arr = [10,20,30,40];
+arr.push(50);
+console.log(arr);
+
+//30. Remova o último elemento do array [1, 2, 3, 4, 5].
+let arr2= [1, 2, 3, 4, 5];
+arr2.pop(5);
+console.log(arr2)
+
+//31. Exiba quantos elementos tem o array [5, 10, 15, 20].
+let arr3 = [5,10,15,20];
+console.log(`Este array tem ${arr3.length} elementos`);
+
+//32. Some todos os números do array [2, 4, 6, 8].
+let arr4= [2,4,6,8];
+soma = 0;
+for(let i =0; i<arr4.length; i++){
+    soma += arr4[i]
+}
+console.log(`A soma de todos os números do array [${arr4}] é ${soma}`)
