@@ -139,7 +139,7 @@ if(numero > 0){
     console.log(`${num} é positivo`);
 }
 
-//26. verifique se uma pessoa com 17 anos é maior de idade.
+//26. Verifique se uma pessoa com 17 anos é maior de idade.
 console.log("\n=== Maior ou menor de idade===");
 let idade = 17;
 if(idade>=18){
@@ -156,7 +156,7 @@ console.log(array_numeros)
 let nomes = ['Matheus', 'Joaquim', 'Eduardo', 'Gustavo', 'maicon']
 console.log(nomes[0])
 
-//29. Adicion o número 50 no final do array[10, 20, 30, 40].
+//29. Adicione o número 50 no final do array[10, 20, 30, 40].
 let arr = [10,20,30,40];
 arr.push(50);
 console.log(arr);
@@ -177,3 +177,31 @@ for(let i =0; i<arr4.length; i++){
     soma += arr4[i]
 }
 console.log(`A soma de todos os números do array [${arr4}] é ${soma}`)
+
+// 33: Multiplique cada elemento do array [1, 2, 3, 4] por 2
+let arrayNum5=[1,2,3,4];
+let arrayNum5Mult=[];
+for(let i=0;i<arrayNum5.length;i++){
+   arrayNum5Mult.push(arrayNum5[i] * 2)
+}
+console.log(`o array [${arrayNum5}] multiplicado por 2, fica [${arrayNum5Mult}]`)
+
+// 34. Verifique se a fruta "laranja" existe no array ["maçã", "banana", "uva"]
+let frutas2 = ["maçã","banana","uva"]
+for(let i=0;i<frutas2.length;i++){
+    if(frutas2[i] === "laranja"){
+        console.log("Laranja existe nesse array")
+    } else {
+        console.log("Laranja não existe nesse array")
+    }
+}
+
+//35. Exiba um por um os elementos do array ["azul", "verde", "amarelo"].
+let array5 = ["azul", "verde", "amarelo"];
+for(let i=0; i<array5.length; i++){
+    console.log(array5[i])
+}
+
+//36. Exiba o último elemento do array[100, 200, 300, 400, 500].
+let arr5 = [100, 200, 300, 400, 500];
+console.log(arr5[arr5.length - 1])
