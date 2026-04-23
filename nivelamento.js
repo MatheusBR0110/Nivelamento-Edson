@@ -205,3 +205,84 @@ for(let i=0; i<array5.length; i++){
 //36. Exiba o último elemento do array[100, 200, 300, 400, 500].
 let arr5 = [100, 200, 300, 400, 500];
 console.log(arr5[arr5.length - 1])
+
+// ==================== ATIVIDADES COM MATRIZ ====================
+
+//37. Crie uma matriz 2x2 com os números 1, 2 na primeira linha e 3, 4 na segunda.
+let matriz1 = [
+    [1, 2],
+    [3, 4]
+]
+
+// 38: Exiba o elemento da linha 1, coluna 2 da matriz [[5, 6], [7, 8]]
+let matriz2 = [
+    [5, 6],
+    [7, 8]
+]
+console.log(matriz2[0][1]);
+
+// 39: Exiba todos os elementos da matriz [[1, 2, 3], [4, 5, 6]]
+let matriz3 = [
+    [1, 2, 3],
+    [4, 5, 6]
+];
+
+for (let i = 0; i < matriz3.length; i++) {
+    for (let j = 0; j < matriz3[i].length; j++) {
+        console.log(`Elementos [${i}][${j}] = ${matriz3[i][j]}`);
+    }
+}
+
+// 40: Some todos os números da matriz [[2, 4], [6, 8]]
+let matriz4 = [
+    [2, 4],
+    [6, 8]
+]
+let somaMatriz = 0;
+for(let i=0; i<matriz4.length; i++){
+    for(let j=0; j<matriz4[i]. length; j++){
+        somaMatriz = somaMatriz + matriz4[i][j];
+    }
+}
+console.log(`Soma dos Elementos ${somaMatriz}`);
+
+// 41: Crie uma matriz 3x3 com números de 1 a 9
+let matriz5 = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+// 42: Exiba os elementos da diagonal principal da matriz [[1,2,3],[4,5,6],[7,8,9]]
+let matriz6 = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+];
+for(let i=0; i<matriz6.length; i++){
+    console.log(matriz6[i][i]);
+}
+
+// 43: Altere o elemento da linha 0, coluna 1 da matriz [[1,2],[3,4]] para 10
+
+
+// 44: Exiba apenas a primeira linha da matriz [[10,20],[30,40],[50,60]]
+let matriz8 = [
+    [10, 20],
+    [30, 40],
+    [50, 60]
+]
+console.log(matriz8[0]);
+
+// 45: Exiba apenas os elementos da primeira coluna da matriz [[1,2],[3,4],[5,6]]
+let matriz9 = [
+    [1, 2],
+    [3, 4],
+    [5, 6]
+]
+
+// 46: Multiplique todos os elementos da matriz [[1,2],[3,4]] por 2
+let matriz10 = [
+    [1, 2],
+    [3, 4]
+]
