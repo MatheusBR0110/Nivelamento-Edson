@@ -34,12 +34,15 @@ console.log(i);}
 // 7: Exiba todos os números ímpares de 1 a 15
 for(let i= 1; i<=15; i= i +2){
 console.log(i);}
+
 // 8: Exiba o resultado da multiplicação de 1 a 10 por 2
 for(let i=1; i<=10; i++){
 console.log(`${i} x 2 ${i*2}`);}
+
 // 9: Exiba os números de 5 em 5, de 5 até 50
 for(let i=5; i<=50; i = i+ 5){
 console.log(i);}
+
 // 10: Calcule e exiba o quadrado dos números de 1 a 10
 for(let i =1; i<=10; i++){
 console.log(`${i}² = ${i*i}`);}
@@ -47,7 +50,7 @@ console.log(`${i}² = ${i*i}`);}
 // ==================== ATIVIDADES COM IF ====================
 
 // 11: Verifique se o número 15 é positivo e exiba uma mensagem
-let numero =-1;
+let numero3 =-1;
 if(numero >0){
 console.log(`${numero} é positivo`);
 }else{
@@ -57,7 +60,7 @@ console.log(`${numero} é negativo`);
 
 // 12: Verifique se uma pessoa com 17 anos é maior de idade
 
-let idade =17;
+let idade1 =17;
 if(idade >=18){
 console.log("Maior de idade");
 }else{
@@ -66,7 +69,7 @@ console.log("Menor de idade");
 
 
 // 13: Verifique se o número 7 é par ou ímpar
-const numero = 7;
+const numero1 = 7;
 
 if (numero % 2 === 0) {
     console.log(numero + " é um número par.");
@@ -81,7 +84,7 @@ console.log("Aprovado");}
 else{console.log("Reprovado");}
 
 // 15: Verifique se o número 8 é maior que 10
-let num =8;
+let num1 =8;
 if(num>=10){
 console.log(`${num} é maior do 10`);
 
@@ -90,7 +93,7 @@ console.log("menor");
 }
 
 // 16: Verifique se o número 0 é igual a zero
-const numero = 0;
+const numero2 = 0;
 
 if (numero === 0) {
     console.log("O número é igual a zero.");
@@ -99,12 +102,45 @@ if (numero === 0) {
 }
 
 // 17: Compare os números 10 e 20 e diga qual é o maior
+let numero0 = 10;
+let numero9 = 20;
+
+if (numero2 > numero1) {
+    console.log("O número " + numero2 + " é maior que o número " + numero1);
+} else if (numero1 > numero2) {
+    console.log("O número " + numero1 + " é maior que o número " + numero2);
+} else {
+    console.log("Os números são iguais.");
+}
 
 // 18: Verifique se uma pessoa de 16 anos pode votar (16+ pode votar)
+let idade4 = 16;
+
+if (idade >= 18) {
+    console.log("Voto obrigatório.");
+} else if (idade >= 16) {
+    console.log("Voto opcional.");
+} else {
+    console.log("Não pode votar.");
+}
 
 // 19: Verifique se o número 25 está entre 10 e 30
+const numero7 = 25;
+
+if (numero >= 10 && numero <= 30) {
+    console.log("O número " + numero + " está entre 10 e 30.");
+} else {
+    console.log("O número " + numero + " não está no intervalo.");
+}
 
 // 20: Verifique se "sábado" é dia útil (segunda a sexta)
+let dia = "sábado";
+
+if (dia === "sábado" || dia === "domingo") {
+    console.log(dia + " não é um dia útil.");
+} else {
+    console.log(dia + " é um dia útil.");
+}
 
 // ==================== ATIVIDADES COM FUNÇÕES ====================
 
@@ -416,21 +452,80 @@ console.log("Multiplicado", resultadoMult);
 // ==================== ATIVIDADES COM OBJETOS ====================
 
 // 67: Crie um objeto pessoa com nome "Ana" e idade 25
+let pessoa = {
+    Nome: "Ana",
+    Idade: 25
+};
 
 // 68: Acesse e exiba o nome do objeto {nome: "Carlos", cidade: "São Paulo"}
+let pessoa1 = {
+    Nome: "Carlos",
+    Cidade: "São Paulo"
+};
+console.log(pessoa1);
 
 // 69: Adicione a propriedade "curso" ao objeto {nome: "Maria", idade: 20}
+let pessoa2 = {
+    Nome: "Maria",
+    Idade: 20
+}
+console.log("Antes", pessoa2)
+pessoa2.curso = "História"
+console.log("Depois", pessoa2)
 
 // 70: Altere a idade do objeto {nome: "João", idade: 18} para 19
+let pessoa3 = {
+    Nome: "João",
+    Idade: 18
+}
+console.log("Antes", pessoa3)
+pessoa3.Idade = 19
+console.log("Depois" , pessoa3)
 
 // 71: Remova a propriedade "telefone" do objeto {nome: "Pedro", telefone: "99999-9999"}
+let pessoa4 = {
+    Nome: "Pedro",
+    Telefone: "99999-9999"
+}
+console.log("Antes", pessoa4)
+delete pessoa4.Telefone
+console.log("Depois", pessoa4)
 
 // 72: Exiba todas as propriedades do objeto {marca: "Nike", tamanho: 42, cor: "preto"}
+let tenis = {
+    marca: "Nike",
+    tamanho: 42,
+    cor: "preto"
+}
+for(let prop in tenis){
+    console.log(`${prop}: ${tenis[prop]}`);
+}
 
 // 73: Crie um objeto cachorro com nome "Rex" e um método latir que exibe "Au au!"
+let cachorro = {
+    Nome: "Rex",
+    latir: function(){
+        console.log("AU! AU!");
+    }
+};
+cachorro.latir();
 
 // 74: Crie um objeto aluno com nome "Lucas" e notas [8, 7, 9]
+let aluno = {
+    Nome:"Lucas",
+    Notas: [8, 7, 9]
+}
+console.log(aluno);
 
 // 75: Crie um objeto carro com marca "Fiat" e um objeto motor com potencia "1.0"
+let carro = {
+    Marca: "Fiat",
+    Motor: "1.0"
+}
 
 // 76: Crie um array com 3 objetos de produtos (nome e preço) e exiba todos
+let arr6 = [
+    Produto1 = {Nome: "Teclado", preco: 50.00},
+    Produto2 = {Nome: "Monitor", preco: 150.00},
+    Produto3 = {Nome: "Notebook", preco: 250.00}
+]
