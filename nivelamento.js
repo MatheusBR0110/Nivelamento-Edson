@@ -549,3 +549,26 @@ num2.forEach(function(n){
 console.log("ForEach Arrow, modo seta");
 num2.forEach(n => console.log(n));
 }
+
+// 78: Mostre todos o valores no terminal.
+//dado do array: let frutas["Maçã", "Banana", "Uva", "Abacate"];
+//Utilizar ForEach função anônima e função arrow.
+{
+let frutas = ["Maçã", "Banana", "Uva", "Abacate"];
+console.log("Usando forEach");
+frutas.forEach(function(n){
+        console.log(n);
+});
+
+console.log("ForEach Arrow, modo seta");
+frutas.forEach(n => console.log(n));
+}
+
+//79: Some todos os valores e mostr o resultado.
+// Preço 10, 30, 50, 60:
+
+{
+let preco = [10, 30, 50, 60];
+console.log("Usando forEach");
+
+}
