@@ -529,3 +529,23 @@ let arr6 = [
     Produto2 = {Nome: "Monitor", preco: 150.00},
     Produto3 = {Nome: "Notebook", preco: 250.00}
 ]
+
+// ==================== ATIVIDADES COM ForEach ====================
+
+// 77: Mostrar Elementos.
+{
+let num2 = [1,2,3,4];
+console.log("Usando o for");
+for(let i=0; i<num2.length; i++){
+    console.log(num2[i]);
+}
+console.log("Usando forEach");
+num2.forEach(function(n){
+    if(n % 2 ===0){
+       console.log(n); 
+    }
+});
+
+console.log("ForEach Arrow, modo seta");
+num2.forEach(n => console.log(n));
+}
