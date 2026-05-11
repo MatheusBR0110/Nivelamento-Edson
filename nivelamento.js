@@ -564,11 +564,35 @@ console.log("ForEach Arrow, modo seta");
 frutas.forEach(n => console.log(n));
 }
 
-//79: Some todos os valores e mostr o resultado.
-// Preço 10, 30, 50, 60:
+//79: Some todos os valores e mostre o resultado.
+// Preço 2, 5, 6, 8:
 
 {
-let preco = [10, 30, 50, 60];
-console.log("Usando forEach");
+let preco = [2, 5, 6, 8];
+console.log("FOR");
+let soma = 0;
+for(let i=0; i<preco.length; i++){
+    soma += preco[i];
+    }
+    console.log(soma);
 
+    console.log("ForEach Arrow");
+    let soma1 = 0;
+    preco.forEach(n => soma1 += n);
+    console.log(soma1);
 }
+
+//80. Exercício de pares.
+
+let numeros = [1,2,3,4,5,6,7,8];
+console.log("For");
+for(let i = 0; i<numeros.length; i++){
+    if(numeros[i] % 2 ===0) console.log(numeros[i]);
+}
+
+console.log("ForEach Arrow");
+numeros.forEach(n =>{
+    if(n%2 ===0) console.log(n);
+});
+
+//81. 
